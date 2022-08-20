@@ -8,6 +8,7 @@ import {
   CameraAltOutlined,
 } from "@material-ui/icons";
 import { Avatar, Badge, Button, makeStyles, Popover } from "@material-ui/core";
+import { useAppContext } from "../../context/appContext";
 import "./styles.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -20,6 +21,8 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
+  const {currentUser} = useAppContext();
+  console.log(currentUser);
   const classes = useStyles();
 
   const handleClick = (event) => {
@@ -82,9 +85,9 @@ const Header = () => {
               </Badge>
 
               <div className="home__text">
-                <div className="home__displayName">John Doe</div>
+                <div className="home__displayName">{currentUser?.displayName}</div>
 
-                <div className="home__mail">johndoe@gmail.com</div>
+                <div className="home__mail">{currentUser?.email}</div>
               </div>
 
               <div className="home__btn">Manage your Google Account</div>
