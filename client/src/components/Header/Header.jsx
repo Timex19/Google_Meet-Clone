@@ -18,8 +18,6 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const Header = () => {
-  const [currentUser, setCurrentUser] = useState(null);
-  const [appState, setAppState] = useState("empty");
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const classes = useStyles();
