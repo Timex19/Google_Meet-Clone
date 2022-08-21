@@ -1,3 +1,9 @@
 export { default as Header } from "./Header/Header";
 export { default as Home } from "./Home/Home";
 export { default as Login } from "./Login/Login";
+export { default as CallPage } from "./CallPage/CallPage";
+export { default as NoMatch } from "./NoMatch/NoMatch";
+export { default as CallPageHeader } from "./CallPageHeader/CallPageHeader";
+export { default as CallPageFooter } from "./CallPageFooter/CallPageFooter";
+export { default as MeetingInfo } from "./MeetingInfo/MeetingInfo";
+export { default as Messenger } from "./Messenger/Messenger";
