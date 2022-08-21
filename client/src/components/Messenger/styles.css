@@ -1,0 +1,115 @@
+.messenger-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    height: calc(100vh - 70px);
+    width: 350px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.messenger-header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.messenger-header h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.messenger-header .icon {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.messenger-header-tabs {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.messenger-header-tabs .tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #555;
+}
+
+.messenger-header-tabs .tab:hover {
+    cursor: pointer;
+    background: rgb(0, 122, 107, 0.039);
+}
+
+.messenger-header-tabs p {
+    margin-left: 10px;
+}
+
+.messenger-header-tabs > .active {
+    border-bottom: 2px solid #04796a;
+    color: #04796a;
+}
+
+.messenger-header-tabs .tab > .active {
+    color: #04796a;
+}
+
+.chat-section {
+    padding: 20px;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.chat-section .chat-block {
+    margin-bottom: 30px;
+}
+
+.chat-section .chat-block .sender {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.chat-section .chat-block .sender small {
+    margin-left: 5px;
+    font-weight: 300;
+}
+
+.chat-section .msg {
+    margin: 0;
+    padding-top: 15px;
+    color: #555;
+    font-size: 14px;
+}
+
+.sent-msg-section {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+}
+
+.sent-msg-section input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    width: 80%;
+}
+
+.sent-msg-section .icon {
+    cursor: pointer;
+}
+
+.sent-msg-section .icon:hover {
+    color: #04796a;
+}

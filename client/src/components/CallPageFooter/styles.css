@@ -1,0 +1,113 @@
+.footer-item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background: #fff;
+    z-index: 1;
+}
+
+.left-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 350px;
+}
+
+.left-item .icon-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.left-item .icon-block .icon {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.left-item .icon-block .icon:hover {
+    cursor: pointer;
+    background: #eee;
+}
+
+.center-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.center-item .icon-block {
+    background: #fff;
+    border: 1px solid rgb(223, 223, 223);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.center-item .icon-block .icon {
+    color: #555;
+    font-size: 30px;
+}
+
+.center-item .icon-block .icon:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px #ddf;
+}
+
+.center-item .icon-block > .red {
+    color: #c91003;
+}
+
+.center-item .icon-block .red-bg {
+    color: #c91003;
+}
+
+.center-item .icon-block .red-bg .icon {
+    color: #fff;
+}
+
+.right-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 350px;
+}
+
+.right-item .icon-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 146px;
+    color: #555;
+}
+
+.right-item .icon-block:hover {
+    cursor: pointer;
+    background: #eee;
+}
+
+.right-item .icon-block .icon {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.right-item .icon-block .title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
