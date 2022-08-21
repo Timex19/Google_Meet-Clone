@@ -19,10 +19,10 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const Header = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const {currentUser} = useAppContext();
-  console.log(currentUser);
+
   const classes = useStyles();
 
   const handleClick = (event) => {
@@ -55,7 +55,7 @@ const Header = () => {
         <div className="header__iconDivider"></div>
 
         <Apps />
-        <Avatar className="header_avatar" onClick={handleClick} />
+        <Avatar className="header_avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4rsSzLimlQyniEtUV4-1raljzFhS45QBeAw&usqp=CAU" onClick={handleClick} />
 
         <Popover
           open={open}
@@ -81,7 +81,7 @@ const Header = () => {
                   </div>
                 }
               >
-                <Avatar className={classes.large} />
+                <Avatar className={classes.large} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4rsSzLimlQyniEtUV4-1raljzFhS45QBeAw&usqp=CAU" />
               </Badge>
 
               <div className="home__text">

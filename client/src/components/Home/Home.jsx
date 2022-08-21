@@ -45,14 +45,19 @@ const Home = () => {
 
         <Divider />
 
-        <p className="hero__learnMore">Learn more about Google Meet</p>
+        <p className="hero__learnMore">
+          <a href="https://meet.google.com/about/redirect/landing-learn-more/?hl=en" target="_blank" rel="noreferrer">
+            Learn more&nbsp;
+          </a> 
+          about Google Meet
+        </p>
       </div>
 
       <div className="hero__right">
         <img
           className="hero__image"
           src="https://www.gstatic.com/meet/google_meet_marketing_ongoing_meeting_grid_427cbb32d746b1d0133b898b50115e96.jpg"
-          alt="Feature Image"
+          alt="Feature"
         />
       </div>
     </div>
