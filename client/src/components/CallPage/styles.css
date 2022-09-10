@@ -1,9 +1,15 @@
-.callpage-container .video-container {
+.callpage-container {
+    background: #000;
     height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    position: absolute;
+}
+
+.callpage-container .video-container {
+    height: 80vh;
+    width: 65vw;
+    padding-top: 50px;
+    object-fit: contained;
+    position: center;
     top: 0;
     left: 0;
     z-index: -1;
-}
+} 
