@@ -70,7 +70,7 @@
     color: #c91003;
 }
 
-.center-item .icon-block .red-bg {
+.center-item .icon-block > .red-bg {
     color: #c91003;
 }
 
