@@ -3,14 +3,19 @@ import { FileCopy, Clear, Security, Person } from "@material-ui/icons";
 import { useAppContext } from "../../context/appContext";
 import "./styles.css";
 
-const MeetingInfo = () => {
+const MeetingInfo = ({ setMeetInfoPopup, url }) => {
   const { currentUser } = useAppContext();
 
   return (
     <div className="meeting-info-block">
       <div className="meeting-header">
         <h3>Your meeting's ready</h3>
-        <Clear className="icon" />
+        <Clear
+          className="icon"
+          onClick={() => {
+            setMeetInfoPopup(false);
+          }}
+        />
       </div>
       <button className="add-people-btn">
         <Person className="icon" />
@@ -20,8 +25,11 @@ const MeetingInfo = () => {
         Or share this meeting link with others you want in the meeting
       </p>
       <div className="meeting-link">
-        <span>Some random URL</span>
-        <FileCopy className="icon" />
+        <span>{url}</span>
+        <FileCopy
+          className="icon"
+          onClick={() => navigator.clipboard.writeText(url)}
+        />
       </div>
       <div className="permission-text">
         <Security className="icon" />

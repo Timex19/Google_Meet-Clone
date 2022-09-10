@@ -7,3 +7,4 @@ export { default as CallPageHeader } from "./CallPageHeader/CallPageHeader";
 export { default as CallPageFooter } from "./CallPageFooter/CallPageFooter";
 export { default as MeetingInfo } from "./MeetingInfo/MeetingInfo";
 export { default as Messenger } from "./Messenger/Messenger";
+export { default as Alert } from "./Alert/Alert";

@@ -1,9 +1,21 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { Button, Divider, InputAdornment, TextField } from "@material-ui/core";
 import { Keyboard, VideoCallOutlined } from "@material-ui/icons";
+import shortid from "shortid";
 import "./styles.css";
 
 const Home = () => {
+
+  const history = useHistory();
+
+  const startCall = () => {
+    // generate a unique id for user
+    const uid = shortid.generate();
+    // user will be redirected to the call page
+    history.push(`/${uid}#init`);
+  }
+
   return (
     <div className="hero">
       <div className="hero__left">
@@ -22,6 +34,7 @@ const Home = () => {
             color="primary"
             variant="contained"
             className="hero__createBTN"
+            onClick={startCall}
           >
             <VideoCallOutlined />
             <p>New Meeting</p>
