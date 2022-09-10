@@ -20,7 +20,7 @@ import Peer from "simple-peer";
 import "./styles.css";
 
 let peer = null;
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect(process.env.REACT_APP_BASE_URL);
 const initialState = [];
 
 const CallPage = () => {
